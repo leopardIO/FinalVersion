@@ -1,0 +1,6 @@
+AUX_SOURCE_DIRECTORY(. DIR_SRCS)
+ADD_EXECUTABLE(ns_client ${DIR_SRCS})
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++11 -O2 ")
+LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib)
+target_link_libraries(ns_client boost_system boost_thread protobuf mysqlclient Match pthread opencv_core opencv_imgproc opencv_highgui opencv_ml opencv_video opencv_features2d opencv_calib3d opencv_objdetect opencv_contrib opencv_legacy opencv_flann ${PROJECT_SOURCE_DIR}/lib/libjsoncpp.a)

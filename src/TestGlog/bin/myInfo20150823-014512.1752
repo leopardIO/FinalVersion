@@ -1,0 +1,4 @@
+Log file created at: 2015/08/23 01:45:12
+Running on machine: localhost
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0823 01:45:12.668093  1752 test_glog.cpp:15] HELLOok!

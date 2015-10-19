@@ -1,0 +1,10 @@
+package cjtech;
+message Job
+{
+    required int32 task_id = 1;
+    required int32 job_type = 2;
+    required int32 content_type = 3;
+    required int32 content_length = 4;
+    required int64 start_time_ = 5;
+    required int64 end_time = 6;
+}

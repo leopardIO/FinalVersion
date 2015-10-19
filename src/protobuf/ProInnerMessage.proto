@@ -1,0 +1,12 @@
+package leopardIO;   
+message ProInnerMessage
+{
+    required int32 session_id = 1;
+    required int32 message_type = 2;
+    required int32 content_type = 3;
+    required int32 content_length = 4;
+    required float start_time = 5;
+    required float end_time = 6;
+}
+
+

@@ -1,0 +1,11 @@
+package cjtech;
+message heartbeat
+{
+    required int32 token = 1;
+    required int32 cpu = 2;
+    required int32 netIO = 3;
+    required int32 diskIO = 4;
+    optional int32 gpu = 5;
+    optional string stutasReq = 6;
+};
+
